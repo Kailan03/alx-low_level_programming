@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc main.c -E -o c
+echo "gcc main.c -E -o c" >> 0-preprocessor
