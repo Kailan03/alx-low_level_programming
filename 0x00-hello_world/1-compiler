@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "gcc -c $CFILE" >>1-compiler
+gcc -c main.c
