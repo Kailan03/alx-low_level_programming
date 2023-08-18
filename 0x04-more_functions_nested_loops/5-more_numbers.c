@@ -1,15 +1,13 @@
 #include "main.h"
 /**
  * more_numbers - print numbers from 0 - 14
- * @i: first int
- * @j: secong int
  *
  * Return: 0
  */
 void more_numbers(void)
 {
-	int (i); 
-	int (j);
+	int i;
+	int j;
 
 	for (i = 1; i <= 10; i++)
 	{
