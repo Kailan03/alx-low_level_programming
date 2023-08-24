@@ -2,9 +2,9 @@
 /**
  * _strncat - concatenate two strings
  * using n bytes
- * @dest: input
- * @src: input
- * @n: input
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  *
  * Return: dest
  */
@@ -24,6 +24,6 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 		j++;
 	}
-	dest[1] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
