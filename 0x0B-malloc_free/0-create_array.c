@@ -14,9 +14,10 @@ char *create_array(unsigned int size, char c)
 
 	ptArray = malloc(size * sizeof(char));
 
+	if (size == 0 || ptArray == NULL)
+		return (NULL);
 	for (counter = 0; counter < size; counter++)
-	{
 		ptArray[counter] = c;
-	}
+
 	return (ptArray);
 }
