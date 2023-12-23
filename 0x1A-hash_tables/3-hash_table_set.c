@@ -8,6 +8,7 @@
  *
  * Return: 1 if it succeeded, 0 otherwise.
  */
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -23,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(current->key, key) == 0)
 		{
-            /* Update existing key */
+			/* Update existing key */
 			free(current->value);
 			current->value = strdup(value);
 			if (current->value == NULL)
@@ -53,7 +54,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
-    new_node->next = ht->array[index];
-    ht->array[index] = new_node;
-    return (1);
+	new_node->next = ht->array[index];
+	ht->array[index] = new_node;
+	return (1);
 }
